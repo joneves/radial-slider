@@ -1,0 +1,80 @@
+.container {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left:0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.slider-column {
+    
+}
+
+.summary-column {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.axis-text {
+    pointer-events: none;
+    font-family: arial;
+    font-size: 9px;
+}
+
+line {
+    stroke: #697a87;
+    stroke-width: 0.5;
+    opacity: 0.5;
+}
+
+.summarybox-container {
+    width: 160px;
+}
+
+.summarybox-calc {
+    display: flex;
+    flex-direction: column;
+}
+
+.summarybox-calc .title {
+    height: 15px;
+    font-family: arial;
+    font-size: 11px;
+    padding: 2px 4px;
+    line-height: 15px;
+}
+
+.summarybox-calc .title span {
+    color: #fff;
+    opacity: 0.8;
+}
+
+.summarybox-calc .values {
+    height: 45px;
+    display: flex;
+
+}
+
+.summarybox-calc .values > div {
+    flex: 1;
+    padding: 4px 10px;
+    font-family: arial;
+    font-size: 12px;
+}
+
+.summarybox-calc .values > div:not(:last-child) {
+    padding-right: 1px;
+    border-right-width:  1px;
+    border-right-style: solid;
+}
+
+.summarybox-calc .values .value {
+    font-size: 20px;
+}
+
+.dragger .arrow-left {
+    background-image: url('../images/arrow.png')
